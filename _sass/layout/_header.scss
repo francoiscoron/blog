@@ -1,0 +1,177 @@
+// Header
+.header {
+    position: absolute;
+    left: 0; top: 0; right: 0;
+    background: #FFF;
+    height: 120px;
+    @include clearfix();
+    padding: 0 3.125rem;
+    border-top: 2px solid $brand-color;
+    border-bottom: 1px solid shade($bg-color, 5%);
+    @media screen and (max-width: $break-small) {
+        height: 90px;
+        padding: 0 1rem;
+    }
+
+}
+.header-logo {
+    float: left;
+    margin: 1.1rem 1.5rem 0 0;
+    a {
+        text-indent: -9999px;
+        background:transparent url('../img/logo.jpg') left top no-repeat;
+        display: inline-block;
+        height: 80px; width: 80px;
+    }
+    @media screen and (max-width: $break-small) {
+        margin-top: .8rem;
+        a {
+            height: 60px; width: 60px;
+            background:transparent url('../img/logox2.jpg') left top no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+.header-menu {
+    float: left;
+    line-height: 120px;
+    a {
+        text-decoration: none;
+        position: relative;
+        margin: 0 15px;
+        font-size: 18px;
+        color: $text-color;
+        display: inline-block;
+
+        @include transition(color .2s ease-in-out);
+
+        &:after {
+            content: "";
+            background: #FFF;
+            width: 100%;
+            top: 118px;
+            height: 2px;
+            display: block;
+            position: absolute;
+            @include transition(all .2s ease-in-out .1s);
+        }
+        &:hover, &.active {
+            color: $brand-color;
+        }
+        &:hover:after, &.active:after {
+            top: 115px;
+            background: $brand-color;
+        }
+    }
+
+    @media screen and (max-width: $break-small) {
+        float: none;
+        margin-top: 25%;
+        text-align: center;
+        line-height: 30px;
+        a {
+            display: block;
+            font-size: 24px;
+            margin-bottom: 1.5rem;
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+.header-social-links {
+    float: right;
+    line-height: 120px;
+    a {
+        text-decoration: none;
+        color: $text-color;
+        padding: 0 10px;
+        display: inline-block;
+        font-size: 16px;
+
+        @include transition(color .2s ease-in-out);
+
+        &:hover {
+            color: $brand-color;
+        }
+    }
+    @media screen and (max-width: $break-small) {
+        position: absolute;
+        font-size: 24px;
+        text-align: center;
+        bottom: 20px;
+        width: 100%;
+
+    }
+}
+
+.header-m {
+    &.show{
+      visibility: visible;
+      top: 0;
+    }
+    @media screen and (max-width: $break-small){
+        position: fixed;
+        z-index: 2;
+        visibility: hidden;
+        top: -300px; bottom: 0;
+        left: 0; right: 0;
+        background:rgba(#FFF, .9);
+        @include transition(top .2s ease-in-out);
+    }
+
+}
+
+.header-m-icon {
+    display: none;
+    z-index: 3;
+    padding: 20px;
+    position: fixed;
+    top: 1.2rem;
+    right: 1rem;
+
+    .bar {
+        display: block;
+        width: 24px; height: 4px;
+        background: $brand-color;
+
+        &:after{
+            margin-top: 8px;
+            content: '';
+            position: absolute;
+            display: block;
+            width: 24px; height: 4px;
+            background: $brand-color;
+            @include transition-duration(.2s);
+        }
+        &:before {
+            content: '';
+            margin-top: -8px;
+            position: absolute;
+            display: block;
+            width: 24px; height: 4px;
+            background: $brand-color;
+            @include transition-duration(.2s);
+        }
+
+        &.open {
+            background-color: transparent;
+
+            &:before {
+              margin-top: 0;
+              @include transform(rotate(45deg));
+            }
+
+            &:after{
+                margin-top: 0;
+                @include transform(rotate(-45deg));
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-small){
+       display: block;
+    }
+}

@@ -1,0 +1,65 @@
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$code-font:'Source Code Pro', ;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Typography
+$base-line-height: 1.6;
+$font-family: 'Source Sans Pro', sans-serif;
+$font-serif: 'Merriweather', serif;
+$font-size: 14px;
+
+// Colors
+$text-color: #444444;
+$dark-text: #2a2324;
+$brand-color: #c1ab80;
+
+// Backgrounds
+$bg-color: #FFF;
+
+// Spacing
+$spacing-unit: 30px;
+
+// Responsive
+$break-small: 700px;
+$break-medium: 980px;
+$spacing-unit: 30px;
+
+// Grid
+$width-container: 1100px;
+$grid-columns: 12;
+$grid-max-width: 65em;
+
+// breakpoints
+$breakpoint-small: "only screen and (max-width: 700px)";
+$breakpoint-medium: "only screen and (max-width: 980px)";
