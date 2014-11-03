@@ -2,6 +2,7 @@
 layout: post
 title:  "Git sur son serveur 1&1"
 date:   2014-08-16
+cover: cover-git
 categorieBg: "webdev"
 ---
 Aprés avoir passer quelques heures à vouloir créer un système de versionning sur mon _serveur web_ grace à **Git**, j'ai trouvé un petit post qui m'as été d'une aide précieuse [lien de l'article](http://blog.johnrbussiculo.com/2012/12/using-git-with-1and1-shared-hosting/). 

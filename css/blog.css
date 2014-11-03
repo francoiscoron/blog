@@ -261,54 +261,95 @@
   color: #099;
 }
 
-/* line 9, ../_sass/blog.scss */
-.wrapper {
-  padding: 0;
-}
-
-/* line 14, ../_sass/blog.scss */
+/* line 11, ../_sass/blog.scss */
 .clearfix:after {
   content: "";
   display: block;
   clear: both;
 }
 
+/* line 17, ../_sass/blog.scss */
+.page-heading {
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+  text-align: center;
+}
 /* line 21, ../_sass/blog.scss */
-.posts-container--box {
-  width: 33.33%;
-  float: left;
-  padding-right: 30px;
-  height: 300px;
-}
-/* line 26, ../_sass/blog.scss */
-.posts-container--box:last-child {
-  padding-right: 0;
-}
-/* line 29, ../_sass/blog.scss */
-.posts-container--box h2 {
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #333;
-  line-height: 1;
+.page-heading h1 {
   margin-bottom: 0;
 }
-/* line 35, ../_sass/blog.scss */
-.posts-container--box h2 a {
-  color: #333;
-}
-/* line 39, ../_sass/blog.scss */
-.posts-container--box p {
-  font-size: 14px;
+/* line 22, ../_sass/blog.scss */
+.page-heading h2 {
+  color: #555;
+  font-weight: lighter;
+  font-size: 1.5rem;
 }
 
-/* line 45, ../_sass/blog.scss */
+/* line 25, ../_sass/blog.scss */
+.post-box {
+  margin: 3rem 0;
+}
+
+/* line 28, ../_sass/blog.scss */
+.post-cover {
+  float: left;
+  margin-right: 1.3rem;
+  max-height: 150px;
+  max-width: 150px;
+}
+/* line 32, ../_sass/blog.scss */
+.post-cover img {
+  border-radius: 100%;
+}
+@media (max-width: 830px) {
+  /* line 28, ../_sass/blog.scss */
+  .post-cover {
+    display: none;
+  }
+}
+
+/* line 37, ../_sass/blog.scss */
+.post-summary {
+  width: 78%;
+  float: right;
+}
+/* line 40, ../_sass/blog.scss */
+.post-summary h3 {
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+/* line 44, ../_sass/blog.scss */
+.post-summary h3 a {
+  color: #333;
+}
+/* line 46, ../_sass/blog.scss */
+.post-summary h3 a:hover {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+/* line 52, ../_sass/blog.scss */
+.post-summary p {
+  line-height: 1.5;
+  color: #555;
+  font-family: "Merriweather", serif;
+}
+@media (max-width: 830px) {
+  /* line 37, ../_sass/blog.scss */
+  .post-summary {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* line 63, ../_sass/blog.scss */
 p > code {
   background-color: #F2F2F2;
   color: #444;
   font-weight: normal;
 }
 
-/* line 50, ../_sass/blog.scss */
+/* line 68, ../_sass/blog.scss */
 pre,
 code {
   font-size: 14px;
@@ -319,35 +360,35 @@ code {
   font-weight: lighter;
 }
 
-/* line 60, ../_sass/blog.scss */
+/* line 78, ../_sass/blog.scss */
 code {
   padding: 1px 5px;
 }
 
-/* line 64, ../_sass/blog.scss */
+/* line 82, ../_sass/blog.scss */
 pre {
   padding: 8px 12px;
   overflow-x: auto;
 }
-/* line 68, ../_sass/blog.scss */
+/* line 86, ../_sass/blog.scss */
 pre > code {
   border: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 76, ../_sass/blog.scss */
+/* line 94, ../_sass/blog.scss */
 .post {
   margin: 2rem auto 4rem;
 }
-/* line 79, ../_sass/blog.scss */
+/* line 97, ../_sass/blog.scss */
 .post header {
   margin-bottom: 3rem;
   padding: 2rem 0;
   text-align: center;
   border-bottom: 1px solid #CCC;
 }
-/* line 86, ../_sass/blog.scss */
+/* line 104, ../_sass/blog.scss */
 .post h2, .post h3 {
   line-height: 1;
   color: #222;
@@ -355,7 +396,7 @@ pre > code {
   color: #444;
   font-weight: bold;
 }
-/* line 94, ../_sass/blog.scss */
+/* line 112, ../_sass/blog.scss */
 .post p {
   font-family: "Merriweather", serif;
   color: #555;

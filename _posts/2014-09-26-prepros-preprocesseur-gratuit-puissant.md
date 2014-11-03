@@ -2,6 +2,7 @@
 layout: post
 title:  "Prepros, un preprocesseur puissant et gratuit"
 date:   2014-07-21
+cover: cover-prepros
 categorieBg: webdev
 ---
 

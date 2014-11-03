@@ -2,6 +2,7 @@
 layout: post
 title:  "Marvel : Prototyper ses applications web et mobile"
 date:   2014-08-26
+cover: cover-marvel
 categorieBg: webdev
 ---
 

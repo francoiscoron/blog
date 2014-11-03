@@ -2,6 +2,7 @@
 layout: post
 title:  "Inspiration  Graphique #1 - Pages produits"
 date:   2014-07-24
+cover: cover-produit
 categorieBg: "webdev"
 ---
 Pour ce premier post sur l'**Inspiration graphique** je vous propose de découvrir les _pages produits_ de site e-commerce. Depuis quelques années, les barrières du **e-commerce** ont été dépassé et les designers s'efforcent de fournir des sites web originaux, facilitant le confort de navigation du client.
