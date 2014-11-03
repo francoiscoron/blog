@@ -2,11 +2,13 @@
 layout: post
 title:  "Pourquoi j'utilise Jade ?"
 date:   2014-10-31 16:19:03
+author: Francois Coron
+cover: cover-jade
 categories: jade gulp workflow
 ---
 
 Depuis quelque temps, **Jade** est devenu mon outils principal lorsque je développe des sites statiques.  Allié à la bonne tache **Gulp**, il devient ultra puissant et offre des possibilités inimaginable en HTML.
-
+<!--more-->
 Au début, **Jade** peut être déroutant de par sa syntax que ses fonctions. Mais au bout de quelques temps (1à 2 heures intensive), vous ne pourrez plus vous en passer ! Le point fort de Jade, c’est qu’il vas ajouter un nombres de fonctionnalité bien utiles à notre workflow. Vous pourrez donc utliser des includes, des mixins, des itérations ou encore des variables. Le tout est compilé HTML.
 
 Pour voir un peu comment Jade fonctionne, je vous propose un cas pratique afin de passer en revue les différents moyen d'exploiter Jade. 

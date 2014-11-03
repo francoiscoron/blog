@@ -1,0 +1,99 @@
+@import "modules/syntax-highlighting";
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400);
+
+// Variables
+$font-family: 'Source Sans Pro', sans-serif;
+$font-serif: 'Merriweather', serif;
+$code-font: 'Source Code Pro';
+$light-color: #555;
+.wrapper {
+    padding: 0;
+}
+// List posts
+.clearfix{
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.posts-container--box {
+    width: 33.33%;
+    float: left;
+    padding-right: 30px;
+    height: 300px;
+    &:last-child {
+        padding-right: 0;
+    }
+    h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #333;
+        line-height: 1;
+        margin-bottom: 0;
+        a {
+            color: #333;
+        }
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+// Code formatting
+p > code {
+    background-color: #F2F2F2;
+    color: #444;
+    font-weight: normal;
+}
+pre,
+code {
+    font-size: 14px;
+    font-family: $code-font;
+    border-radius: 3px;
+    background-color: #282828;
+    color: #EEE;
+    font-weight: lighter;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+// Post
+.post {
+    margin: 2rem auto 4rem;
+
+    header {
+        margin-bottom: 3rem;
+        padding: 2rem 0;
+        text-align: center;
+        border-bottom: 1px solid #CCC;
+    }
+
+    h2, h3 {
+        line-height: 1;
+        color: #222;
+        margin: 2rem 0;
+        color: #444;
+        font-weight: bold;
+    }
+
+    p {
+        font-family: $font-serif;
+        color: $light-color;
+        line-height: 1.8;
+    }
+}

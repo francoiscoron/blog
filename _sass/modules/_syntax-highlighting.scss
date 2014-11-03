@@ -3,7 +3,6 @@
  */
 .highlight {
     background: #FFF;
-    @extend %vertical-rhythm;
 
 
     .lineno{ color: #666; margin-right: 5px;}
@@ -18,6 +17,7 @@
     .gd .x { color: #000; background-color: #faa } // Generic.Deleted.Specific
     .ge    { font-style: italic } // Generic.Emph
     .gr    { color: #a00 } // Generic.Error
+    .err   {color: #FFF;background: none;}
     .gh    { color: #999 } // Generic.Heading
     .gi    { color: #000; background-color: #dfd } // Generic.Inserted
     .gi .x { color: #000; background-color: #afa } // Generic.Inserted.Specific
